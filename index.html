@@ -7,12 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- first step to a responsive site -->
-        <title>HTML Skeleton</title>
+        <title></title>
 
         <!-- FONT AWESOME -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- Your styles should be called here -->
+        <link href="styles.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,11 +25,94 @@
 
     <body>
         <!-- YOUR CONTENT GOES HERE -->
+        <h1>Can LGBT seniors afford to live in Ingersoll Senior Residences?</h1>
 
-        <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+        <p>The Ingersoll Senior Residences is a 17-story affordable housing building that developers propose as “NYC's first senior living environment that promotes diversity and safety for Lesbian, Gay, Bisexual and Transgender (LGBT) elders, their friends and allies.” An estimated 100,000 LGBT elders currently live in the city, and they often face discrimination and living situations that become financially unsustainable. The complex is planned for Fort Greene, a neighborhood has an inflated cost of living. Ingersoll was awarded Section 8 Housing, “ensuring that apartments are affordable to anyone earning below 60% Average Median income.” Find out if you qualify to live in the housing and compare basic groceries staples to the closest supermarket.</p>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- Your javascript should be called here -->
-    </body>
+        <p>The new housing is available to anyone earning below 60 percent of the area medium income.</p>
 
+        <p>What is your monthly income?</p>
+        <input type="number" class="income" placeholder="$"/>
+        <!--User will input monthly income -->
+        <p>How many people will live with you?</p>
+        <!--User will input family size -->
+        <input type="number" class="family_size" placeholder="family size"/>
+        <p>Do you qualify?</p>
+        <!--YES or NO will appear in based on js if/then AMI (Area Median Income for each household size
+        Example, if between $20,000 to $50,000 for household of 2, YES. etc-->
+        <span></span>
+        <p>According to SAGE, residents will not pay more than one-third of their total income for rent.</p>
+        <p>Based on your income, that comes out to <span></span>
+        <!--Here will be coded one-third of income entered in first question -->
+
+
+        <p>How much do you spend on basic groceries each month?</p>
+        <p>Enter what you currently pay for each item listed below.
+
+        <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Current</th>
+                    <th>New</th>
+                    <th>Change</th>
+
+                </tr>
+                <tr class="item">
+                    <td>Milk</td>
+                    <td>$<input type="number" class="current" placeholder="per gallon" /></td>
+                    <td class="new_cost">$<span>4.59</span></td>
+                    <td class="change">$<span></span></td>
+
+                </tr>
+                <tr class="item">
+                    <td>Bread</td>
+                    <td>$<input type="number" class="current" placeholder="per loaf" /></td>
+                  <td class="new_cost">$<span>2.49</span></td>
+                    <td class="change">$<span></span></td>
+
+                </tr>
+                <tr class="item">
+                    <td>Eggs</td>
+                    <td>$<input type="number" class="current" placeholder="per dozen" /></td>
+                    <td class="new_cost">$<span>3.79</span></td>
+                    <td class="change">$<span></span></td>
+
+                </tr>
+                <tr class="item">
+                    <td>Bananas</td>
+                    <td>$<input type="number" class="current" placeholder="per lb."/></td>
+                    <td class="new_cost">$<span>.79</span></td>
+                    <td class="change">$<span></span></td>
+
+                  </tr>
+                <tr class="item">
+                    <td>Apples</td>
+                    <td>$<input type="number" class="current" placeholder="per lb." /></td>
+                    <td class="new_cost">$<span>1.99</span></td>
+                    <td class="change">$<span></span></td>
+
+                </tr>
+                <tr class="item">
+                    <td>Rice</td>
+                    <td>$<input type="number" class="current" placeholder="per lb." /></td>
+                    <td class="new_cost">$<span>2.00</span></td>
+                    <td class="change">$<span></span></td>
+
+                  </tr>
+                <tr class="item">
+                    <td>5lb. Chicken</td>
+                    <td>$<input type="number" class="current" placeholder="per chicken"/></td>
+                  <td class="new_cost">$<span>10.00</span></td>
+                    <td class="change">$<span></span></td>
+
+                <tr class="total">
+                    <td>Total</td>
+                    <td class="total_current">$<span></span></td> <!--Total of all currents -->
+                    <td class="total_new">$<span>25.65</span></td> <!--Total of all new, FIXED NUMBER, WILL APPEAR WHEN ALL OF CURRENTS ARE CALCULATED -->
+                    <td class="total_change">$<span></span></td> <!--Will you pay more money or less money? -->
+                    </tr>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        </body>
 </html>
