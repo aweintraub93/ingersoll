@@ -20,7 +20,7 @@ $(document).ready(function(){
       new_cost = parseFloat(new_cost);
       // change = this_row.find(".change").text();
 
-    
+
       this_row.find(".new_cost").find("span").addClass("active");
     }
 
