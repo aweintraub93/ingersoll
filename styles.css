@@ -52,7 +52,13 @@ input {
   display: inline;
 }
 
+#yes, #no{
+  display: none;
+}
 
+#yes.active, #no.active{
+  display: block;
+}
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {

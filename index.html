@@ -50,12 +50,12 @@
         <p>How many people will live with you?</p>
         <!--User will input family size -->
         <input type="number" class="family_size" placeholder="family size"/>
-        <p>Do you qualify?</p>
-
-
+        <div class="qualify"><p>Do you qualify?</p>
         <!--YES or NO will appear in based on js if/then AMI (Area Median Income for each household size
         Example, if between $20,000 to $50,000 for household of 2, YES. etc-->
-        <span></span>
+        <span id="yes">Yes you qualify</span>
+        <span id="no">No, you do not qualify</span></div>
+
         <p>According to SAGE, residents will not pay more than one-third of their total income for rent.</p>
         <p>Based on your income, that comes out to <span></span>
         <!--Here will be coded one-third of income entered in first question -->
@@ -123,7 +123,7 @@
                 <tr class="total">
                     <td>Total</td>
                     <td class="total_current">$<span></span></td> <!--Total of all currents -->
-                    <td class="total_new">$<span>25.65</span></td> <!--Total of all new, FIXED NUMBER, WILL APPEAR WHEN ALL OF CURRENTS ARE CALCULATED -->
+                    <td class="total_new">$<span></span></td> <!--Total of all new, FIXED NUMBER, WILL APPEAR WHEN ALL OF CURRENTS ARE CALCULATED -->
                     <td class="total_change">$<span></span></td> <!--Will you pay more money or less money? -->
                     </tr>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
