@@ -44,7 +44,7 @@
 
         <p>The new housing is available to anyone earning below 60 percent of the area medium income.</p>
 
-        <p>What is your monthly income?</p>
+        <p>What is your yearly income?</p>
         <input type="number" class="income" placeholder="$"/>
         <!--User will input monthly income -->
         <p>How many people will live with you?</p>
@@ -53,11 +53,11 @@
         <div class="qualify"><p>Do you qualify?</p>
         <!--YES or NO will appear in based on js if/then AMI (Area Median Income for each household size
         Example, if between $20,000 to $50,000 for household of 2, YES. etc-->
-        <span id="yes">Yes you qualify</span>
-        <span id="no">No, you do not qualify</span></div>
-
+        <span id="yes" class="response">Yes you qualify</span>
+        <span id="no" class="response">No, you do not qualify</span></div>
+      <div id="hide_this">
         <p>According to SAGE, residents will not pay more than one-third of their total income for rent.</p>
-        <p>Based on your income, that comes out to <span></span>
+        <p>Based on your income, that comes out to <span id="income-third"></span>
         <!--Here will be coded one-third of income entered in first question -->
 
 
@@ -74,49 +74,49 @@
                 </tr>
                 <tr class="item">
                     <td>Milk</td>
-                    <td>$<input type="number" class="current" placeholder="per gallon" /></td>
+                    <td>$<input id="calc" type="number" class="current" placeholder="per gallon" /></td>
                     <td class="new_cost">$<span>4.59</span></td>
                     <td class="change">$<span></span></td>
 
                 </tr>
                 <tr class="item">
                     <td>Bread</td>
-                    <td>$<input type="number" class="current" placeholder="per loaf" /></td>
+                    <td>$<input id="calc" type="number" class="current" placeholder="per loaf" /></td>
                   <td class="new_cost">$<span>2.49</span></td>
                     <td class="change">$<span></span></td>
 
                 </tr>
                 <tr class="item">
                     <td>Eggs</td>
-                    <td>$<input type="number" class="current" placeholder="per dozen" /></td>
+                    <td>$<input id="calc" type="number" class="current" placeholder="per dozen" /></td>
                     <td class="new_cost">$<span>3.79</span></td>
                     <td class="change">$<span></span></td>
 
                 </tr>
                 <tr class="item">
                     <td>Bananas</td>
-                    <td>$<input type="number" class="current" placeholder="per lb."/></td>
+                    <td>$<input id="calc" type="number" class="current" placeholder="per lb."/></td>
                     <td class="new_cost">$<span>.79</span></td>
                     <td class="change">$<span></span></td>
 
                   </tr>
                 <tr class="item">
                     <td>Apples</td>
-                    <td>$<input type="number" class="current" placeholder="per lb." /></td>
+                    <td>$<input id="calc" type="number" class="current" placeholder="per lb." /></td>
                     <td class="new_cost">$<span>1.99</span></td>
                     <td class="change">$<span></span></td>
 
                 </tr>
                 <tr class="item">
                     <td>Rice</td>
-                    <td>$<input type="number" class="current" placeholder="per lb." /></td>
+                    <td>$<input id="calc" type="number" class="current" placeholder="per lb." /></td>
                     <td class="new_cost">$<span>2.00</span></td>
                     <td class="change">$<span></span></td>
 
                   </tr>
                 <tr class="item">
                     <td>5lb. Chicken</td>
-                    <td>$<input type="number" class="current" placeholder="per chicken"/></td>
+                    <td>$<input id="calc" type="number" class="current" placeholder="per chicken"/></td>
                   <td class="new_cost">$<span>10.00</span></td>
                     <td class="change">$<span></span></td>
 
@@ -126,6 +126,7 @@
                     <td class="total_new">$<span></span></td> <!--Total of all new, FIXED NUMBER, WILL APPEAR WHEN ALL OF CURRENTS ARE CALCULATED -->
                     <td class="total_change">$<span></span></td> <!--Will you pay more money or less money? -->
                     </tr>
+        </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="main.js"></script>
         </body>
