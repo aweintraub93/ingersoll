@@ -22,16 +22,22 @@ html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
     margin: 0 auto;
-    padding: 1em;
     font-family: 'Roboto Condensed', sans-serif;
-    text-align: justify;
+    text-align: left;
 }
 
-.container{
+div.container {
   max-width: 980px;
   margin: 0 auto;
   padding: 1em;
 }
+
+figcaption{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
 
 /* table{
   margin: 0 auto;
@@ -50,8 +56,12 @@ td, th {
 }
 
 .photo{
-  width:100%;
+  width: 100%;
   margin: 0 auto;
+}
+
+figure{
+  margin: 0;
 }
 
 input {
@@ -87,9 +97,26 @@ input {
     td, th {
         width: auto;
         display: table-cell;
+
     }
+
+
 }
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+
+    html, body{
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    figure{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    table{
+      font-size: 20px;
+    }
 }

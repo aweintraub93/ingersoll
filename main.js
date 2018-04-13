@@ -61,7 +61,7 @@ $(document).ready(function() {
       new_cost = this_row.find(".new_cost").find("span").text();
 
     console.log("This is the fixed price of milk:" + new_cost);
-    change = (new_cost - current).toFixed(2);
+    change = (current-new_cost).toFixed(2);
     console.log("this is a change in cost:" + change);
 
 

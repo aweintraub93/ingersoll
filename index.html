@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- first step to a responsive site -->
-        <title>Can LGBT seniors afford to live in Ingersoll Senior Residences?</title>
+        <title>Who can live in Ingersoll Senior Residences?</title>
 
         <!-- FONT AWESOME -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -27,52 +27,57 @@
     <body>
       <div class="container">
         <!-- YOUR CONTENT GOES HERE -->
-        <h1>Can LGBT seniors afford to live in Ingersoll Senior Residences?</h1>
+        <h1>Who can live in Ingersoll Senior Residences?</h1>
+        <p> by Allie Weintraub and K. Dominic McKenzie </p>
 
+      </div>
 
-      <div class="photo">
-        <img src="img/rendering.png" /> </div>
-<p> Rendering of the Ingersoll Senior Residences, courtesy of BFC Partners - developers of the project </p>
-<p> by Allie Weintraub and K. Dominic McKenzie </p>
-<br>
+      <figure>
+        <img class="photo" src="img/rendering.png" />
+        <figcaption> Rendering of the Ingersoll Senior Residences, courtesy of BFC Partners - developers of the project. </figcaption>
+      </figure>
+
+        <div class="container">
+
         <p>The Ingersoll Senior Residences is a 17-story affordable housing building that developers propose as “NYC's first senior living environment that promotes
           diversity and safety for Lesbian, Gay, Bisexual and Transgender (LGBT) elders, their friends and allies.” An estimated 100,000 LGBT elders currently live in the city,
           and they often face discrimination and living situations that become financially unsustainable. </p>
 
         <p> The complex is planned for Fort Greene, a neighborhood has an inflated cost of living. Ingersoll was awarded Section 8 Housing, “ensuring that apartments are affordable to anyone earning below 60% Average Median income.”</p>
-        <br>
+
         <p>The new housing is available to anyone earning below 60 percent of the area medium income.</p>
-        <p>Find out if you qualify to live in the housing and compare basic groceries staples to the closest supermarket.</p>
+        <p>Find out if you qualify to live in the housing and compare basic groceries to the closest supermarket.</p>
 
 
 
 
-        <p>What is your yearly income?</p>
+        <h3>1. What is your yearly income?</h3>
         <input type="number" class="income" placeholder="$"/>
         <!--User will input monthly income -->
-        <p>How many people will live with you?</p>
+        <h3>2. How many people will live with you?</h3>
         <!--User will input family size -->
         <input type="number" class="family_size" placeholder="family size"/>
-        <div class="qualify"><p>Do you qualify?</p>
+        <div class="qualify"><h3>3. Do you qualify?</h3>
         <!--YES or NO will appear in based on js if/then AMI (Area Median Income for each household size
         Example, if between $20,000 to $50,000 for household of 2, YES. etc-->
-        <span id="yes" class="response">Yes you qualify</span>
-        <span id="no" class="response">No, you do not qualify</span></div>
+        <span id="yes" class="response">Yes you qualify. Continue below.</span>
+        <span id="no" class="response">No, you do not qualify. Questions 4-5 apply to potential residents only.</span></div>
       <div id="hide_this">
-        <p>According to SAGE, residents will not pay more than one-third of their total income for rent.</p>
+        <h3>4. According to SAGE, residents will not pay more than one-third of their total income for rent.</h4>
         <p>Based on your income, that comes out to <span id="income-third"></span>
         <!--Here will be coded one-third of income entered in first question -->
-</div>
+
 <div class="contain_calculate">
-        <p>How much do you spend on basic groceries each month?</p>
-        <p>Enter what you currently pay for each item listed below.
+        <h3>5. How much do you spend on basic groceries each month?</h3>
+        <h3> Groceries Calculator </h3>
+        <p>Enter what you currently pay for each item listed below.</p>
 
         <table>
                 <tr>
                     <th>Item</th>
                     <th>Current</th>
                     <th>New</th>
-                    <th>Change</th>
+                    <th>Lose/Save</th>
 
                 </tr>
                 <tr class="item">
