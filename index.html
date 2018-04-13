@@ -25,24 +25,27 @@
     </head>
 
     <body>
+      <div class="container">
         <!-- YOUR CONTENT GOES HERE -->
         <h1>Can LGBT seniors afford to live in Ingersoll Senior Residences?</h1>
 
 
       <div class="photo">
         <img src="img/rendering.png" /> </div>
-<h4> Rendering courtesy of BFC Partners, developers of the project </h4>
-
+<p> Rendering of the Ingersoll Senior Residences, courtesy of BFC Partners - developers of the project </p>
+<p> by Allie Weintraub and K. Dominic McKenzie </p>
+<br>
         <p>The Ingersoll Senior Residences is a 17-story affordable housing building that developers propose as “NYC's first senior living environment that promotes
           diversity and safety for Lesbian, Gay, Bisexual and Transgender (LGBT) elders, their friends and allies.” An estimated 100,000 LGBT elders currently live in the city,
           and they often face discrimination and living situations that become financially unsustainable. </p>
 
         <p> The complex is planned for Fort Greene, a neighborhood has an inflated cost of living. Ingersoll was awarded Section 8 Housing, “ensuring that apartments are affordable to anyone earning below 60% Average Median income.”</p>
-
-          <p>Find out if you qualify to live in the housing and compare basic groceries staples to the closest supermarket.</p>
-
-
+        <br>
         <p>The new housing is available to anyone earning below 60 percent of the area medium income.</p>
+        <p>Find out if you qualify to live in the housing and compare basic groceries staples to the closest supermarket.</p>
+
+
+
 
         <p>What is your yearly income?</p>
         <input type="number" class="income" placeholder="$"/>
@@ -59,8 +62,8 @@
         <p>According to SAGE, residents will not pay more than one-third of their total income for rent.</p>
         <p>Based on your income, that comes out to <span id="income-third"></span>
         <!--Here will be coded one-third of income entered in first question -->
-
-
+</div>
+<div class="contain_calculate">
         <p>How much do you spend on basic groceries each month?</p>
         <p>Enter what you currently pay for each item listed below.
 
@@ -126,7 +129,8 @@
                     <td class="total_new">$<span></span></td> <!--Total of all new, FIXED NUMBER, WILL APPEAR WHEN ALL OF CURRENTS ARE CALCULATED -->
                     <td class="total_change">$<span></span></td> <!--Will you pay more money or less money? -->
                     </tr>
-        </div>
+      </div>
+      </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="main.js"></script>
         </body>

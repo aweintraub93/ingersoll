@@ -24,14 +24,29 @@ html, body {
     margin: 0 auto;
     padding: 1em;
     font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
 }
 
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1em;
+}
 
+/* table{
+  margin: 0 auto;
+  width: auto;
+} */
+
+/* .contain_calculate{
+  text-align: center;
+} */
 
 td, th {
     width: 25%;
     display: inline-block;
     padding: 0.2em;
+
 }
 
 .photo{
@@ -41,7 +56,7 @@ td, th {
 
 input {
     max-width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 .item .new_cost span{
