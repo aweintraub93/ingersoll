@@ -32,11 +32,60 @@ div.container {
   padding: 1em;
 }
 
+blockquote{
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
 figcaption{
   padding-left: 1em;
   padding-right: 1em;
 }
 
+blockquote {
+  font-family: 'PT Sans Narrow', sans-serif;
+  width: 75%;
+  text-align: center;
+  padding: 0px;
+  margin: 30px auto 30px auto;
+  font-size: 1.3em;
+  line-height: 1.8em;
+  position: relative;
+}
+
+blockquote p::before, blockquote p::after {
+  font-size: 3em;
+  color: #D07E50;
+  font-family: 'arial';
+  position: absolute;
+}
+
+blockquote p::before {
+  content: '\201c';
+  display: inline-block;
+  padding-right: 10px;
+  left: -20px;
+}
+
+blockquote p::after {
+  content: '\201d';
+  padding-left: 25px;
+  bottom: 40px;
+}
+
+blockquote footer cite {
+  display: block;
+  font-family: 'Helvetica', sans-serif;
+  font-size: .8em;
+  font-style: normal;
+  line-height: 1.2em;
+  text-align: right;
+  color: #888;
+  padding-top: 20px;
+}
 
 
 /* table{
